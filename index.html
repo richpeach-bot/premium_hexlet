@@ -1,21 +1,580 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Document</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="https://static.tildacdn.com/tild3965-3161-4631-b963-323031613533/favicon_1.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	
+	<meta property="og:title" content="Индивидуальное обучение программированию | Хекслет"/>
+	<meta property="og:description" content="Персональное обучение с наставником в комфортном для вас темпе. Освойте JavaScript, PHP, Python или HTML/CSS под руководством опытного программиста."/>
+	<meta property="og:image" content="https://static.tildacdn.com/tild3132-6134-4062-b864-366465633062/fb-cover.png"/>
+	<meta property="og:url" content="https://premium.hexlet.io"/>
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="https://cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+
+	<title>Индивидуальное обучение программированию | Хекслет</title>
 </head>
 <body>
+	<div class="container-fluid">
 
-<mai class="main">
-  
-</mai>
-  
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="js/main.js"></script>
+		<div class="modal fade" tabindex="-1" id="modal-form" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+			  <div class="modal-content">
+				<div class="modal-body">
+					<img class="img-fluid" src="https://thumb.tildacdn.com/tild3532-3939-4766-b030-646462363539/-/resize/920x/-/format/webp/form-header.png" alt="">
+					<div class="form">
+						<p class="form__text text-center mb-3">
+							Свяжемся с вами, ответим на вопросы и расскажем, как вы будете учиться
+						</p>
+						<form class="needs-validation" novalidate>
+							<div class="form__input mb-4">
+								<input type="text" class="form-control" required placeholder="Электронная почта">
+								<div class="invalid-feedback">
+									Заполите поле
+								</div>
+							</div>
+							<div class="form__input mb-4">
+								<input type="text" class="form-control" required placeholder="Телефон">
+								<div class="invalid-feedback">
+									Пожалуйста заполните все обязательные поля
+								</div>
+							</div>
+							<div class="form__input mb-4">
+								<input type="text" class="form-control" required placeholder="Имя">
+								<div class="invalid-feedback">
+									Пожалуйста заполните все обязательные поля
+								</div>
+							</div>
+							<div class="form__btn mb-3">
+								<button class="btn custom-btn rounded-0" type="submit">Отправить</button>
+							</div>
+						</form>
+						
+						<p class="form__disclaimer">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c <a class="form__disclaimer-link" href="https://ru.hexlet.io/pages/privacy">политикой конфиденциальности</a></p>
+					</div>
+					
+				</div>
+			  </div>
+			</div>
+		  </div>
+		
+		<header class="header">
+			<div class="header__inner d-flex flex-md-row justify-content-md-between align-content-center justify-content-center flex-column">
+				<a class="header__logo align-self-center" href="https://ru.hexlet.io/">
+					Хекслет
+				</a>
+				<ul class="nav d-flex flex-md-row justify-content-md-end align-content-center justify-content-center flex-column">
+					<li class="nav-item text-center">
+						<a class="nav-link active" aria-current="page" href="#about">О нас</a>
+					</li>
+					<li class="nav-item text-center">
+						<a class="nav-link" href="#reviews">Отзывы</a>
+					</li>
+					<li class="nav-item text-center">
+						<a class="nav-link" href="#prices">Цены</a>
+					</li>
+					<li class="nav-item text-center">
+						<a class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-form">Начать обучение</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		
+		<div class="wrapper">
+			<main class="main">
+				
+				<div class="hero m-0 w-100 row align-items-md-center">
+					<div class="hero__lside p-0"></div>
+					<div class="hero__rside p-0">
+						<div class="hero__form">
+							<h1 class="hero__title">
+								Индивидуальное обучение программированию
+							</h1>
+							<p class="hero__descr">
+								Освойте JavaScript, PHP, Python, Java и Rails с помощью наставника
+							</p>
+
+							<form class="needs-validation form" novalidate>
+								<div class="form__input mb-4">
+									<input type="text" class="form-control" required placeholder="Электронная почта">
+									<div class="invalid-feedback">
+										Заполите поле
+									</div>
+								</div>
+								<div class="form__input mb-4">
+									<input type="text" class="form-control" required placeholder="Телефон">
+									<div class="invalid-feedback">
+										Пожалуйста заполните все обязательные поля
+									</div>
+								</div>
+								<div class="form__input mb-4">
+									<input type="text" class="form-control" required placeholder="Имя">
+									<div class="invalid-feedback">
+										Пожалуйста заполните все обязательные поля
+									</div>
+								</div>
+								<div class="mb-3">
+									<button class="btn custom-btn rounded-0 text-uppercase" type="submit">Отправить заявку</button>
+								</div>
+							</form>
+							
+							<p class="form__disclaimer">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c <a class="form__disclaimer-link" href="https://ru.hexlet.io/pages/privacy">политикой конфиденциальности</a></p>
+						</div>
+					</div>
+				</div>
+
+				<section class="section about row flex-md-row align-items-md-start justify-content-center flex-column-reverse align-items-center" id="about">
+					<div class="section__text col col-sm-10 col-md-4 offset-md-2">
+						<p class="mb-4">
+							Хекслет — онлайн-школа программирования. Мы помогаем новичкам стать профессиональными разработчиками, а опытным специалистам получать новые знания и развиваться
+						</p>
+						<p>
+							Помогаем студентам развивать вычислительное мышление. Учим видеть проблему, а не задание, анализировать и рассуждать на уровне проблемы и выше, а не только на уровне кода
+						</p>
+					</div>
+					<div class="about__heading col col-sm-10 col-md-4">
+						<p class="mb-3">
+							Персональное обучение с наставником в&nbsp;комфортном для&nbsp;вас темпе
+						</p>
+					</div>
+				</section>
+
+				<section class="section routes row flex-md-row flex-xxl-column align-items-xxl-center flex-column justify-content-center">
+					<h2 class="section__title fw-bold text-center pb-3 mb-5">
+						Доступные направления обучения
+					</h2>
+					<div class="routes__row col col-md-9 col-xxl-8 mb-5 p-0">
+						<div class="d-flex flex-sm-row justify-content-md-between justify-content-sm-around flex-column justify-content-center">
+							<div class="routes__item mb-4">
+								<img class="mx-auto mb-4" src="https://static.tildacdn.com/tild3663-3238-4364-b431-663861306165/frontend-520efd145a9.svg"	alt="JavaScript">
+								<p class="text-center fw-bold">JavaScript</p>
+							</div>
+
+							<div class="routes__item mb-4">
+								<img class="mx-auto mb-4" src="https://static.tildacdn.com/tild6635-3439-4635-a463-663831363264/php-62c152b20d3ec890.svg"	alt="PHP">
+								<p class="text-center fw-bold">PHP</p>
+							</div>
+
+							<div class="routes__item mb-4">
+								<img class="mx-auto mb-4" src="https://static.tildacdn.com/tild6163-6638-4336-a437-303262356236/backend-d560351e49f0.svg"	alt="Node.js">
+								<p class="text-center fw-bold">Node.js</p>
+							</div>
+
+							<div class="routes__item mb-4">
+								<img class="mx-auto mb-4" src="https://static.tildacdn.com/tild6165-3465-4536-b938-653839336336/python.svg"	alt="Python">
+								<p class="text-center fw-bold">Python</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="routes__row col col-md-8 col-xxl-7 ps-0 pt-2">
+						<div class="d-flex flex-sm-row justify-content-md-between justify-content-sm-around flex-column justify-content-center">
+							<div class="routes__item mb-4">
+								<img class="mx-auto mb-4 w-140" src="https://static.tildacdn.com/tild3335-3038-4237-b937-376333356162/layout-designer-f4be.svg" alt="Вёрстка">
+								<p class="text-center fw-bold">Вёрстка</p>
+							</div>
+
+							<div class="routes__item mb-4">
+								<img class="mx-auto mb-4 w-140" src="https://thumb.tildacdn.com/tild6663-3433-4966-a332-643036363963/-/resize/280x/-/format/webp/ruby.png" alt="Ruby on Rails">
+								<p class="text-center fw-bold">Ruby on Rails</p>
+							</div>
+
+							<div class="routes__item mb-4">
+								<img class="mx-auto mb-4 w-140" src="https://thumb.tildacdn.com/tild6166-3866-4632-b834-636133363035/-/resize/280x/-/format/webp/java_logo.png" alt="JavaScript">
+								<p class="text-center fw-bold">Java</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="section section-p">
+					<div class="row flex-lg-row justify-content-lg-between align-items-center flex-column gy-3">
+						<div class="col col-md-9 col-lg-4 offset-lg-2">
+							<h2 class="section__title fw-bold mb-2">
+								Наставник
+							</h2>
+				
+							<div class="section__text pe-3">
+								<p class="mb-4">
+									Наставник — опытный программист, который добился успехов в профессии, а теперь делится знаниями и опытом со студентами
+								</p>
+								<p class="mb-4">
+									Он помогает планировать обучение, осваивать теорию и писать код. Если возникли проблемы, наставник подскажет, как их можно решить
+								</p>
+								<p>
+									Наставник ведет студента по практическим проектам, задает правильные вопросы и помогает разобраться с реальными задачами. Он проверяет код проектов и оценивает ваш прогресс
+								</p>
+							</div>
+						</div>
+						<div class="col col-md-9 col-lg-6">
+							<img src="https://static.tildacdn.com/lib/unsplash/4da65a32-f44d-fa43-588c-2fd45e457a3e/photo.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="col col-md-9 col-lg-8 col-xxl-8 offset-lg-2 mt-5 mx-auto">
+						<div class="check row flex-lg-row justify-content-lg-between flex-column">
+							<div class="check__item col mb-4">
+								<div class="d-flex">
+									<svg class="flex-shrink-0 me-3 bi bi-check-circle-fill" xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor" viewBox="0 0 16 16">
+										<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+										</svg>
+									<div class="check__title fw-bold mb-2">
+										Парное программирование с наставником
+									</div>
+								</div>
+								<p class="check__text ms-5">
+									Программируйте параллельно вместе с наставником, работая над единой задачей. Задавайте вопросы, обсуждайте решения, ищите альтернативные подходы, в режиме онлайн получайте обратную связь и рекомендации
+								</p>
+							</div>
+							<div class="check__item col mb-4">
+								<div class="d-flex">
+									<svg class="flex-shrink-0 me-3 bi bi-check-circle-fill" xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor" viewBox="0 0 16 16">
+										<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+										</svg>
+									<div class="check__title fw-bold mb-2">
+										Помощь наставника
+									</div>
+								</div>
+								<p class="check__text ms-5">
+									Не просто передаёт опыт и знания, но формирует правильное отношение к обучению, помогает понять свои сильные и слабые стороны, отслеживает ваш прогресс, учит ставить цели, преодолевать тревоги и сомнения
+								</p>
+							</div>
+						</div>
+						<div class="check row flex-lg-row justify-content-lg-between flex-column">
+							<div class="check__item col mb-4">
+								<div class="d-flex">
+									<svg class="flex-shrink-0 me-3 bi bi-check-circle-fill" xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor" viewBox="0 0 16 16">
+										<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+										</svg>
+									<div class="check__title fw-bold mb-2">
+										Ревью кода от наставника
+									</div>
+								</div>
+								<p class="check__text ms-5">
+									Получайте код ревью не только в рамках прохождения проектов, но и там, где это потребуется — на любом из этапов обучения. Общее время работы с наставником — 8 часов в месяц
+								</p>
+							</div>
+							<div class="check__item col">
+								<div class="d-flex">
+									<svg class="flex-shrink-0 me-3 bi bi-check-circle-fill" xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor" viewBox="0 0 16 16">
+										<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+										</svg>
+									<div class="check__title fw-bold mb-2">
+										Индивидуальный подбор наставника
+									</div>
+								</div>
+								<p class="check__text ms-5">
+									Все наставники проходят отбор и обучение. Мы стараемся подбирать наставника индивидуально под студента, после предварительного интервью. Вы сможете поменять наставника, если не найдёте с ним общий язык
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="section section-p theory">
+					<div class="row flex-lg-row justify-content-lg-between align-items-center flex-column gy-3">
+						<div class="col col-md-9 col-lg-4 offset-lg-2">
+							<h2 class="section__title fw-bold mb-2">
+								Теория
+							</h2>
+				
+							<div class="section__text pe-3">
+								<p class="mb-4">
+									Короткие уроки в текстовом формате помогают освоить сложную информацию, а не просто прослушать лекцию
+								</p>
+								<p>
+									Интерактивный тест после каждого урока нужен, чтобы проверить себя и закрепить изученное
+								</p>
+							</div>
+						</div>
+						<div class="col col-md-9 col-lg-6">
+							<img src="https://thumb.tildacdn.com/tild3764-3231-4030-b466-633731633237/-/format/webp/theory-new.png" alt="">
+						</div>
+					</div>
+
+					<div class="col col-md-8 col-lg-7 col-xxl-7 mx-auto border border-warning border-5">
+						<p class="text-center fw-bold p-5">
+							У вас остается пожизненный доступ к теории пройденных уроков.<br>Мы постоянно обновляем теорию, поэтому вы сможете вернуться и актуализировать свои знания
+						</p>
+					</div>
+				</section>
+
+				<section class="section section-p">
+					<div class="row flex-lg-row justify-content-lg-between align-items-center flex-column gy-3">
+						<div class="col col-md-9 col-lg-4 offset-lg-2">
+							<h2 class="section__title fw-bold mb-2">
+								Практика
+							</h2>
+				
+							<div class="section__text pe-3">
+								<p>
+									Применяете полученные знания на практике. Вам доступны упражнения прямо в браузере с автоматизированной проверкой правильности выполнения заданий тестами и качества кода линтерами
+								</p>
+							</div>
+						</div>
+						<div class="col col-md-9 col-lg-6">
+							<img src="https://thumb.tildacdn.com/tild3964-3235-4234-b832-326536393162/-/format/webp/practice.png" alt="">
+						</div>
+					</div>
+				</section>
+
+				<section class="section section-p projects anim anim-no-hide">
+					<div class="row flex-lg-row justify-content-lg-between align-items-lg-start align-items-center flex-column gy-3">
+						<div class="col col-md-9 col-lg-4 offset-lg-2 mb-3">
+							<h2 class="section__title fw-bold mb-2">
+								Проекты
+							</h2>
+						</div>
+						<div class="col col-md-9 col-lg-6 mb-3">
+							<div class="section__text col col-lg-10">
+								<p class="mb-4">
+									На практических проектах студенты создают реальные приложения. Это уникальный опыт самостоятельного решения задач, который делает вас на голову выше других соискателей-джуниоров. В ходе рефакторинга кода с наставником вы увидите ошибки, научитесь лучшим практикам и способам оптимизации. На выходе вы получаете качественный код и рабочее приложение, которое станет частью вашего портфолио
+								</p>
+								<p>
+									Выполняются на своем компьютере и лежат в открытом доступе на Github. Проверяются автоматизированно и наставником. Помогают пройти собеседования и выполнить тестовое задание
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- <div class="slider-container col col-10">
+						<div class="juxtapose">
+							<img src="https://static.tildacdn.com/tild3161-6436-4235-a434-646233373431/image2.png" />
+							<img src="https://static.tildacdn.com/tild6633-3736-4235-b535-626634666562/_2_4__js.png" />
+						</div>
+					</div> -->
+				</section>
+				
+				<section class="section section-p reviews" id="reviews">
+					<h2 class="section__title fw-bold text-center">
+						Мы помогли изменить жизнь тысячам людей
+					</h2>
+
+					<div class="reviews__item col col-lg-8 col-xxl-7 mx-auto mb-5 anim anim-no-hide">
+						<div class="d-flex justify-content-center">
+							<div class="reviews__person-wrap">
+								<div class="reviews__person" style="background-image: url('https://thumb.tildacdn.com/tild6264-6132-4064-b066-386166316266/-/cover/200x200/center/center/-/format/webp/ampilov.jpg')">
+									<div class="reviews__bubble-tail"></div>
+								</div>
+							</div>
+							
+							<div class="reviews__bubble bg-white w-100">
+								<p class="reviews__person-name fw-bold">
+									Сергей Ампилов
+								</p>
+								<p class="reviews__bubble-title fw-bold mb-2">
+									О том, как выбирал где учиться
+								</p>
+								<p class="mb-1">
+									«Тогда я начал смотреть в сторону онлайн-курсов. Особо не вникая, и не теряя времени, начал скупать всё подряд. Курсы верстки HTML, CSS. Потом курсы front-end – JavaScript, React. Я проходил одновременно 2-3 курса в ускоренном режиме. Сил уходило много, а прогресс был почти нулевой. Потому что тупо повторяя за преподавателем, как оказалось, ничему научиться нельзя. Я приуныл. И однажды, листая бесконечные отзывы под очередным ютубовским роликом, обнаружил ссылку на Хекслет и несколько комментариев, что там учат хорошо.
+								</p>
+								<p>
+									Я тем же вечером стартанул на бесплатных курсах, и через два дня купил платную подписку. Я реально залип. И, о — чудо! У меня пошел прогресс. Я наконец-то начал программировать. Сам! Хоть и на учебных задачах, хоть и очень медленно! Но дело пошло»
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="reviews__item col col-lg-8 col-xxl-7 mx-auto mb-5 anim anim-no-hide">
+						<div class="reviews__bubble bg-white">
+							<p class="reviews__person-name fw-bold">
+								Денис Солодухин
+							</p>
+							<p class="reviews__bubble-title fw-bold mb-2">
+								О жизни после Хекслета
+							</p>
+							<p class="mb-1">
+								«Меня повысили на работе. Мне 40 лет. У меня двое маленьких детей. Есть первая работа в жизни, которая мне настолько нравится, что когда еду домой, то, бывает, проезжаю остановку, потому что меня прёт от новой задачи.
+							</p>
+							<p class="mb-1">
+								Понимаю, мой апгрейд стал возможен благодаря ребятам из Хекслета, которые грамотно организовали, настроили и реализовали пожалуй лучшую систему обучения. Что очень важно, ребята не останавливаются на достигнутом.
+							</p>
+							<p>
+								Даже в 40 лет можно реализовать казалось бы невозможное: изучить программирование с нуля и устроиться на работу»
+							</p>
+						</div>
+					</div>
+
+					<div class="reviews__item col col-lg-8 col-xxl-7 mx-auto mb-5 anim anim-no-hide">
+						<div class="d-flex justify-content-center">
+							<div class="reviews__person-wrap">
+								<div class="reviews__person" style="background-image: url('https://thumb.tildacdn.com/tild6163-3866-4366-b664-646366396338/-/cover/200x200/center/center/-/format/webp/bykov.jpg');">
+									<div class="reviews__bubble-tail"></div>
+								</div>
+							</div>
+							
+							<div class="reviews__bubble bg-white w-100">
+								<p class="reviews__person-name fw-bold">
+									Вячеслав Быков
+								</p>
+								<p class="reviews__bubble-title fw-bold mb-2">
+									О повышении квалификации
+								</p>
+								<p class="mb-1">
+									«После Хекслета собеседования на Middle Frontend разработчика были только в радость. Ты просто рассказываешь всё, о чем читал на протяжении полугода, и делишься опытом с проектов. Тестовых заданий уж точно бояться не стоит, здесь я делал вещи и посложнее. Всего прошел шесть собеседований, после которых получил пять офферов. Дальше выбирал по принципу более интересного стека и команды, в одиночку работать я уж точно теперь не хочу.
+								</p>
+								<p>
+									Ну и, конечно, приятный бонус: зарплаты у мидлов гораздо интересней, а зона ответственности меньше, чему у фулстека-самоучки ;)»
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="section section-p" id="prices">
+					<h2 class="section__title fw-bold text-center mb-5 anim anim-no-hide">
+						В стоимость обучения включены
+					</h2>
+
+					<div class="col col-sm-10 col-lg-9 col-xxl-7 mx-auto">
+						<div class="row flex-md-row flex-column justify-content-start justify-content-md-between justify-content-lg-center mb-1">
+							<div class="check__item col mb-5 d-flex">
+								<svg class="flex-shrink-0 me-3 bi bi-check-circle-fill" xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor" viewBox="0 0 16 16">
+									<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+									</svg>
+								<div class="check__title fw-bold mb-2">
+									Помощь персонального наставника
+								</div>
+							</div>
+							<div class="check__item col mb-5 d-flex">
+								<svg class="flex-shrink-0 me-3 bi bi-check-circle-fill" xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor" viewBox="0 0 16 16">
+									<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+									</svg>
+								<div class="check__title fw-bold mb-2">
+									Практические проекты в портфолио
+								</div>
+							</div>
+						</div>
+						<div class="row flex-md-row flex-column justify-content-start justify-content-md-between mb-4">
+							<div class="check__item col mb-5 d-flex align-items-center">
+								<svg class="flex-shrink-0 me-3 bi bi-check-circle-fill" xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor" viewBox="0 0 16 16">
+									<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+									</svg>
+								<div class="check__title fw-bold mb-2">
+									Пожизненный доступ к теории пройденных уроков
+								</div>
+							</div>
+							<div class="check__item col mb-5 d-flex align-items-center">
+								<svg class="flex-shrink-0 me-3 bi bi-check-circle-fill" xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor" viewBox="0 0 16 16">
+									<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+									</svg>
+								<div class="check__title fw-bold mb-2">
+									Доступ к IDE-инструментам JetBrains на 6 месяцев
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="bid shadow border border-1 mx-auto p-5">
+						<div class="bid__cost text-center">
+							16 900 <span>₽</span>
+						</div>
+						<div class="bid__cost-label text-center">
+							Ежемесячный платёж
+						</div>
+						<div class="bid__btn text-center mb-3">
+							<a class="btn custom-btn rounded-0" data-bs-toggle="modal" data-bs-target="#modal-form" role="button"> Отправить заявку </a>
+						</div>
+					</div>
+				</section>
+
+				<section class="section section-p form">
+					<div class="form__inner col mx-auto">
+						<div class="form__heading">
+							<h2 class="section__title text-center fw-bold mb-3">
+								Остались вопросы?
+							</h2>
+							<p class="text-center">
+								Свяжемся с вами, ответим на вопросы и расскажем, как вы будете учиться
+							</p>
+						</div>
+						
+						<div class="col">
+							<form class="needs-validation mx-auto" novalidate>
+								<div class="form__input mb-4">
+									<input type="text" class="form-control" required placeholder="Электронная почта">
+									<div class="invalid-feedback">
+										Заполите поле
+									</div>
+								</div>
+								<div class="form__input mb-4">
+									<input type="text" class="form-control" required placeholder="Телефон">
+									<div class="invalid-feedback">
+										Пожалуйста заполните все обязательные поля
+									</div>
+								</div>
+								<div class="form__input mb-4">
+									<input type="text" class="form-control" required placeholder="Имя">
+									<div class="invalid-feedback">
+										Пожалуйста заполните все обязательные поля
+									</div>
+								</div>
+								<div class="form__btn text-center my-5">
+									<button class="btn custom-btn rounded-0" type="submit">Отправить</button>
+								</div>
+								<div class="form__disclaimer text-center">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь<br> <a class="form__disclaimer-link" href="https://ru.hexlet.io/pages/privacy">c политикой конфиденциальности</a></div>
+							</form>
+						</div>
+						
+					</div>
+				</section>
+			</main>
+		</div>
+
+		<footer class="footer">
+			<ul class="footer__social list-group list-group-horizontal justify-content-center">
+				<li class="list-group-item bg-transparent border-0 ">
+					<a href="https://www.facebook.com/Hexlet/">
+					<svg class="t-sociallinks__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve"><desc>Facebook</desc><path d="M47.761,24c0,13.121-10.638,23.76-23.758,23.76C10.877,47.76,0.239,37.121,0.239,24c0-13.124,10.638-23.76,23.764-23.76C37.123,0.24,47.761,10.876,47.761,24 M20.033,38.85H26.2V24.01h4.163l0.539-5.242H26.2v-3.083c0-1.156,0.769-1.427,1.308-1.427h3.318V9.168L26.258,9.15c-5.072,0-6.225,3.796-6.225,6.224v3.394H17.1v5.242h2.933V38.85z"></path></svg>
+					</a>
+				</li>
+				<li class="list-group-item bg-transparent border-0 ">
+					<a href="https://twitter.com/HexletHQ">
+					<svg class="t-sociallinks__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve"><desc>Twitter</desc><path d="M47.762,24c0,13.121-10.639,23.76-23.761,23.76S0.24,37.121,0.24,24c0-13.124,10.639-23.76,23.761-23.76 S47.762,10.876,47.762,24 M38.031,12.375c-1.177,0.7-2.481,1.208-3.87,1.481c-1.11-1.186-2.694-1.926-4.455-1.926 c-3.364,0-6.093,2.729-6.093,6.095c0,0.478,0.054,0.941,0.156,1.388c-5.063-0.255-9.554-2.68-12.559-6.367 c-0.524,0.898-0.825,1.947-0.825,3.064c0,2.113,1.076,3.978,2.711,5.07c-0.998-0.031-1.939-0.306-2.761-0.762v0.077 c0,2.951,2.1,5.414,4.889,5.975c-0.512,0.14-1.05,0.215-1.606,0.215c-0.393,0-0.775-0.039-1.146-0.109 c0.777,2.42,3.026,4.182,5.692,4.232c-2.086,1.634-4.712,2.607-7.567,2.607c-0.492,0-0.977-0.027-1.453-0.084 c2.696,1.729,5.899,2.736,9.34,2.736c11.209,0,17.337-9.283,17.337-17.337c0-0.263-0.004-0.527-0.017-0.789 c1.19-0.858,2.224-1.932,3.039-3.152c-1.091,0.485-2.266,0.811-3.498,0.958C36.609,14.994,37.576,13.8,38.031,12.375"></path></svg>
+					</a>
+				</li>
+				<li class="list-group-item bg-transparent border-0 ">
+					<a href="https://vk.com/hexlet">
+					<svg class="t-sociallinks__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 99 99" enable-background="new 0 0 99 99" xml:space="preserve"><desc>VK</desc><path fill-rule="evenodd" clip-rule="evenodd" d="M49 98C76.062 98 98 76.062 98 49C98 21.938 76.062 0 49 0C21.938 0 0 21.938 0 49C0 76.062 21.938 98 49 98ZM22 34C22.4442 55.3198 33.1042 68.1323 51.7933 68.1323H52.8527V55.9351C59.7202 56.6182 64.9132 61.6409 66.9973 68.1323H76.7008C74.0359 58.4292 67.0314 53.0649 62.658 51.0149C67.0314 48.4866 73.1814 42.3367 74.6505 34H65.8353C63.922 40.7649 58.251 46.915 52.8527 47.4958V34H44.0374V57.6433C38.5707 56.2766 31.6692 49.6482 31.3617 34H22Z"></path></svg>
+					</a>
+				</li>
+				<li class="list-group-item bg-transparent border-0 ">
+					<a href="https://www.youtube.com/user/HexletUniversity">
+						<svg class="t-sociallinks__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve"><desc>Youtube</desc><path d="M24 0.0130005C37.248 0.0130005 47.987 10.753 47.987 24C47.987 37.247 37.247 47.987 24 47.987C10.753 47.987 0.0130005 37.247 0.0130005 24C0.0130005 10.753 10.752 0.0130005 24 0.0130005ZM35.815 18.093C35.565 16.756 34.452 15.758 33.173 15.635C30.119 15.439 27.054 15.28 23.995 15.278C20.936 15.276 17.882 15.432 14.828 15.625C13.544 15.749 12.431 16.742 12.182 18.084C11.898 20.017 11.756 21.969 11.756 23.92C11.756 25.871 11.898 27.823 12.182 29.756C12.431 31.098 13.544 32.21 14.828 32.333C17.883 32.526 20.935 32.723 23.995 32.723C27.053 32.723 30.121 32.551 33.173 32.353C34.452 32.229 35.565 31.084 35.815 29.747C36.101 27.817 36.244 25.868 36.244 23.919C36.244 21.971 36.101 20.023 35.815 18.093ZM21.224 27.435V20.32L27.851 23.878L21.224 27.435Z"></path></svg>
+					</a>
+				</li>
+				<li class="list-group-item bg-transparent border-0 ">
+					<a href="https://www.instagram.com/hexlethq/">
+						<svg class="t-sociallinks__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48px" height="48px" viewBox="0 0 30 30" xml:space="preserve"><desc>Instagram</desc><path d="M15,11.014 C12.801,11.014 11.015,12.797 11.015,15 C11.015,17.202 12.802,18.987 15,18.987 C17.199,18.987 18.987,17.202 18.987,15 C18.987,12.797 17.199,11.014 15,11.014 L15,11.014 Z M15,17.606 C13.556,17.606 12.393,16.439 12.393,15 C12.393,13.561 13.556,12.394 15,12.394 C16.429,12.394 17.607,13.561 17.607,15 C17.607,16.439 16.444,17.606 15,17.606 L15,17.606 Z"></path><path d="M19.385,9.556 C18.872,9.556 18.465,9.964 18.465,10.477 C18.465,10.989 18.872,11.396 19.385,11.396 C19.898,11.396 20.306,10.989 20.306,10.477 C20.306,9.964 19.897,9.556 19.385,9.556 L19.385,9.556 Z"></path><path d="M15.002,0.15 C6.798,0.15 0.149,6.797 0.149,15 C0.149,23.201 6.798,29.85 15.002,29.85 C23.201,29.85 29.852,23.202 29.852,15 C29.852,6.797 23.201,0.15 15.002,0.15 L15.002,0.15 Z M22.666,18.265 C22.666,20.688 20.687,22.666 18.25,22.666 L11.75,22.666 C9.312,22.666 7.333,20.687 7.333,18.28 L7.333,11.734 C7.333,9.312 9.311,7.334 11.75,7.334 L18.25,7.334 C20.688,7.334 22.666,9.312 22.666,11.734 L22.666,18.265 L22.666,18.265 Z"></path></svg>
+					</a>
+				</li>
+				<li class="list-group-item bg-transparent border-0 ">
+					<a href="https://t.me/hexlet_ru">
+						<svg class="t-sociallinks__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48px" height="48px" viewBox="0 0 60 60" xml:space="preserve"><desc>Telegram</desc><path d="M30 0C13.4 0 0 13.4 0 30s13.4 30 30 30 30-13.4 30-30S46.6 0 30 0zm16.9 13.9l-6.7 31.5c-.1.6-.8.9-1.4.6l-10.3-6.9-5.5 5.2c-.5.4-1.2.2-1.4-.4L18 32.7l-9.5-3.9c-.7-.3-.7-1.5 0-1.8l37.1-14.1c.7-.2 1.4.3 1.3 1z"></path><path d="M22.7 40.6l.6-5.8 16.8-16.3-20.2 13.3"></path></svg>
+					</a>
+				</li>
+			</ul>
+			<div class="footer__copy d-flex justify-content-center">
+				<p class="text-center">
+					UMA Esplanadi <br>
+					Pohjoisesplanadi 39 <br>
+					00100 HELSINKI
+				</p>
+			</div>
+		</footer>
+
+
+		
+	</div>
+
+	<script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
